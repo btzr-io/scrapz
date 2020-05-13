@@ -53,14 +53,14 @@ Recommended tag model:
 - category: the second tag rpresent a category of the content type.
 - subcategory: the third tag represents a subcategory of the previous tag asigned. You can use more than one tag for this.
 
-Exaples
+Examples
 
 ```
-#music #classical #piano
+[music] [classical] [piano] [...]
 ```
 
 ```
-#book #anthology #mystery
+[book] [anthology] [mystery] [...]
 ```  
 
 ### Block scrapz
