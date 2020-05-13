@@ -1,3 +1,7 @@
+#----------------- #
+#  Import modules  #
+# ---------------- #
+
 # Http / https requests
 import requests
 
@@ -32,8 +36,10 @@ try:
     # Print to console
     print(response.json())
 
+# Handle connection error
 except requests.ConnectionError as error:
      print("[!] Connection error: {0}".format(error))
 
+# Handle http error ( 404, 503, etc... )
 except requests.HTTPError as error:
     print("[!] Http error: {0}".format(error))
