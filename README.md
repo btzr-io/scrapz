@@ -12,10 +12,8 @@ Human readable metadata scraping from the LBRY blockchain.
 
 Public chainquery API:
 
-```Shell
-"Queries must take less than 10 seconds or they are cancelled, to give everyone a chance to use the API since this is a public API.
- If you have a query you really want/need please create an issue in the chainquery repo."
-```
+
+>"Queries must take less than 10 seconds or they are cancelled..."
 
 ## Guidelines
 
