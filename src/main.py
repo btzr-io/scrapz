@@ -16,7 +16,7 @@ CHAINQUERY_API_SQL: Final = "https://chainquery.lbry.io/api/sql";
 MATURE_TAG_ID: Final = 1;
 
 #--------------- #
-#  Inital test
+#  Inital test   #
 # -------------- #
 
 try:
