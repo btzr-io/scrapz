@@ -1,2 +1,2 @@
 # scrapz
-Data scraping for humans from the LBRY blockchain
+Simple data scraping from the LBRY blockchain.
