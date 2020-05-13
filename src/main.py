@@ -14,7 +14,7 @@ from typing import Final
 
 # Public chainquery API
 CHAINQUERY_API: Final = "https://chainquery.lbry.io/api";
-CHAINQUERY_API_SQL: Final = "https://chainquery.lbry.io/api/sql";
+CHAINQUERY_API_SQL: Final = CHAINQUERY_API."/sql";
 
 # The mature tag is the first entry on the tags table
 MATURE_TAG_ID: Final = 1;
