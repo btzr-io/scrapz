@@ -1,5 +1,5 @@
 # scrapz
-Simple data scraping from the LBRY blockchain.
+Human readable metadata scraping from the LBRY blockchain.
 
 ### Install
 
