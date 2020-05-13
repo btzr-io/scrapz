@@ -52,7 +52,9 @@ Recommended tag model:
 ```
 
 - Type: the first tag represent what kind of content are you publishing.
+
 - category: the second tag rpresent a category of the content type.
+
 - subcategory: the third tag represents a subcategory of the previous tag asigned. You can use more than one tag for this.
 
 Examples
