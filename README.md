@@ -17,7 +17,7 @@ Public chainquery API:
 
 ## Guidelines
 
-Follow this guidelines if you want your content data to be discover and analysed by `scrapz`:
+Follow this guidelines if you want your content to be discovered and analysed by `scrapz`:
 
 ### Anonymous
 
@@ -49,7 +49,7 @@ Recommended tag model:
 [type] [category] ['subcategory'] [...]
 ```
 
-- Type: the first tag represent what kind of content are you publishing.
+- type: the first tag represent what type of content are you publishing.
 
 - category: the second tag rpresent a category of the content type.
 
