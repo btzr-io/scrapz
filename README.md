@@ -23,7 +23,7 @@ Follow this guidelines if you want your content data to be discover and analysed
 
 ### Anonymous
 
-`Scrapz` will ignore anonymous published content.
+`Scrapz` will ignore anonymously published content by default.
 
 ### Content License
 
