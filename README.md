@@ -25,7 +25,9 @@ Follow this guidelines if you want your content data to be discover and analysed
 
 `Scrapz` will ignore anonymously published content by default.
 
-### Content License
+### Licensed content
+
+Unlicensed Content is ignored by default.
 
 - Always provide a valid license for your content.
 
