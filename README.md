@@ -27,7 +27,7 @@ Follow this guidelines if you want your content data to be discover and analysed
 
 ### Licensed content
 
-Unlicensed Content is ignored by default.
+Unlicensed Content will be ignored by default.
 
 - Always provide a valid license for your content.
 
