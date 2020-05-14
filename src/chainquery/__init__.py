@@ -24,7 +24,7 @@ MATURE_TAG_ID: Final = 1;
 def testQuery():
     claim = Table('claim')
     # Basic query
-    q =  Query.from_(claim).select(claim.name, claim.claim_id).limit(1000)
+    q =  Query.from_(claim).select(claim.name, claim.claim_id).limit(10)
     # returns string from query
     return q.get_sql().replace('"', '')
 
