@@ -2,7 +2,19 @@
 #  Import modules  #
 # ---------------- #
 
-import chainquery as chain
+from chainquery  import query, queries
 
-# test...
-chain.query()
+# Basic options
+queryOptions = {
+    'limit': 1,
+}
+
+# Example usage
+data = query(
+    # Predefined query:
+    queries.contentAudio(),
+    # Query options
+    queryOptions
+)
+
+print(data)

@@ -4,52 +4,34 @@
 
 import requests as req
 from typing import Final
-from pypika import Query, Table
 
 #--------------------- #
 #  Constant variables  #
 # -------------------- #
 
-# Public chainquery API endpoints:
+# Public chainquery API base url:
 CHAINQUERY_API: Final = "https://chainquery.lbry.io/api";
+# Public chainquery API for sql queries:
 CHAINQUERY_API_SQL: Final = CHAINQUERY_API + "/sql";
 
-# The mature tag is the first entry on the tags table
-MATURE_TAG_ID: Final = 1;
-
-#-------------- #
-#  Test query   #
-# ------------- #
-
-def testQuery():
-    claim = Table('claim')
-    # Basic query
-    q =  Query.from_(claim).select(claim.name, claim.claim_id).limit(10)
-    # returns string from query
+def formatQuery(q):
     return q.get_sql().replace('"', '')
 
-#--------------------- #
-#  Chainqury wrapper   #
-# -------------------- #
-
-def query():
+def query(q, options):
     try:
-        # Build query string
-        q = testQuery()
+        # Apply options
+        q = q.limit(options['limit'])
+        # Preapare string for url encoding
+        queryString = formatQuery(q)
         # Send the sql query as url parameter
-        payload = {'query': q }
-
+        payload = {'query': queryString }
         # Initial request test
         res = req.get(CHAINQUERY_API_SQL, params = payload)
-
         res.raise_for_status()
-
-        # Parse to json
+        # Parse to json and return results
         res = res.json()
-
         data = res['data']
-
-        print(data)
+        return data
 
     # Handle connection error
     except req.ConnectionError as error:
